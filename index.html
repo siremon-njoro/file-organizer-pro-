@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Organizer Pro | Smart File Sorting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Main Content */
+        .main {
+            background: white;
+            padding: 50px 0;
+        }
+        
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 10px;
+            color: #2c7da0;
+        }
+        
+        /* Demo Section */
+        .demo {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .demo-placeholder {
+            background: #1a252f;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-family: monospace;
+        }
+        
+        /* Pricing */
+        .pricing {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .price-box {
+            background: #2c7da0;
+            color: white;
+            display: inline-block;
+            padding: 30px 50px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        
+        .buy-btn {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: background 0.2s;
+        }
+        
+        .buy-btn:hover {
+            background: #219a52;
+        }
+        
+        /* FAQ */
+        .faq {
+            background: #f9f9f9;
+            padding: 50px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #2c7da0;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: #61a5c2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+            <h1>🗂️ File Organizer Pro</h1>
+            <p>Stop wasting time searching through messy folders. Smart sorting, one click.</p>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main">
+        <div class="container">
+            <h2 style="text-align: center;">Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>Auto-Sorting</h3>
+                    <p>PDFs go to PDFs, images to Images, code to Code — automatically.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Smart Peek</h3>
+                    <p>Reads inside files to detect invoices, resumes, and contracts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">↩️</div>
+                    <h3>Undo Available</h3>
+                    <p>Changed your mind? Undo any organization within 7 days.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Dry Run Mode</h3>
+                    <p>Preview what will happen before moving any files.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Activity Log</h3>
+                    <p>Full log of every file moved, with timestamps.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🪟</div>
+                    <h3>Clean GUI</h3>
+                    <p>No command line. Just point, click, and organize.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Demo Section -->
+    <div class="demo">
+        <div class="container">
+            <h2>See It In Action</h2>
+            <p>Watch how File Organizer Pro cleans up a messy downloads folder in seconds.</p>
+            <div class="demo-placeholder">
+                🎬 Demo video coming soon
+                <br>
+                <small>(Record a 30-second screen capture and replace this)</small>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pricing Section -->
+    <div class="pricing">
+        <div class="container">
+            <h2>Simple, One-Time Payment</h2>
+            <div class="price-box">
+                <div class="price">$12</div>
+                <div>One-time purchase</div>
+                <div><small>Includes lifetime updates</small></div>
+            </div>
+            <br>
+            <a href="#" class="buy-btn">📦 Buy Now — $12</a>
+            <p style="margin-top: 20px; color: #666;">30-day money-back guarantee • Instant download • No subscription</p>
+        </div>
+    </div>
+    
+    <!-- FAQ Section -->
+    <div class="faq">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">❓ Does this work on Mac and Windows?</div>
+                <div>Yes! File Organizer Pro works on Windows 10/11 and macOS. A Linux version is also available on request.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">❓ Will this delete my files?</div>
+                <div>No. The app only <strong>moves</strong> files into organized subfolders. It never deletes anything. The "Dry Run" mode lets you preview everything before committing.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">❓ How long does the undo feature last?</div>
+                <div>You can undo any organization within 7 days. After that, the undo file is automatically deleted.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">❓ Do I need Python installed to run this?</div>
+                <div>No. File Organizer Pro comes as a standalone .exe file. Just download and run — no technical knowledge required.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">❓ What if I don't like it?</div>
+                <div>30-day money-back guarantee. No questions asked.</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2026 File Organizer Pro. Built with ❤️ by [Your Name]</p>
+            <p><a href="#">Support</a> | <a href="#">Privacy Policy</a> | <a href="#">Refund Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
