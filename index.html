@@ -80,7 +80,7 @@
             color: #2c7da0;
         }
         
-        /* Demo Section */
+        /* Demo Video Section */
         .demo {
             background: #2c3e50;
             color: white;
@@ -88,12 +88,57 @@
             text-align: center;
         }
         
-        .demo-placeholder {
-            background: #1a252f;
-            padding: 40px;
+        .video-container {
+            max-width: 800px;
+            margin: 30px auto 0;
             border-radius: 10px;
-            margin-top: 20px;
-            font-family: monospace;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .video-container video {
+            width: 100%;
+            display: block;
+        }
+        
+        /* Sandbox Section */
+        .sandbox {
+            background: #e8f4f8;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+            border: 2px dashed #2c7da0;
+        }
+        
+        .sandbox h3 {
+            color: #2c7da0;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .sandbox-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .sandbox-btn {
+            display: inline-block;
+            background: #2c7da0;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        
+        .sandbox-btn:hover {
+            background: #1a5a75;
         }
         
         /* Pricing */
@@ -226,15 +271,31 @@
         </div>
     </div>
     
-    <!-- Demo Section -->
+    <!-- Demo Video Section -->
     <div class="demo">
         <div class="container">
             <h2>See It In Action</h2>
-            <p>Watch how File Organizer Pro cleans up a messy downloads folder in seconds.</p>
-            <div class="demo-placeholder">
-                🎬 Demo video coming soon
-                <br>
-                <small>(Record a 30-second screen capture and replace this)</small>
+            <p>Watch how File Organizer Pro cleans up a messy folder in seconds.</p>
+            <div class="video-container">
+                <video controls poster="poster.jpg">
+                    <source src="demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sandbox / Test Section -->
+    <div class="main">
+        <div class="container">
+            <div class="sandbox">
+                <h3>🧪 Try Before You Trust</h3>
+                <p>Not sure? Download the <strong>FileCreator</strong> app to generate a test folder with sample files (PDFs, MP3s, EXEs, DOCX, etc.).</p>
+                <p>Run File Organizer Pro on this test folder to see exactly how it works — without touching your real files.</p>
+                <div class="sandbox-buttons">
+                    <a href="FileCreator.exe" class="sandbox-btn">📦 Download FileCreator (Free)</a>
+                </div>
+                <small style="color: #666;">Creates a "TestFolder" on your desktop with 20+ sample files in seconds.</small>
             </div>
         </div>
     </div>
@@ -282,6 +343,11 @@
             <div class="faq-item">
                 <div class="faq-question">❓ Do I need Python installed to run this?</div>
                 <div>No. File Organizer Pro comes as a standalone .exe file. Just download and run — no technical knowledge required.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">❓ What is FileCreator?</div>
+                <div>FileCreator is a free companion app that generates a safe test folder with sample files. Use it to test File Organizer Pro on dummy data before organizing your real Downloads folder.</div>
             </div>
             
             <div class="faq-item">
